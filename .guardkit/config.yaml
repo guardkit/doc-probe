@@ -1,0 +1,15 @@
+# doc-probe: the factory's settings for this project (5 October 2026).
+toolchain:
+  test: "qa/run-tests.sh"
+  test_timeout: 600
+
+memory:
+  project: doc_probe
+
+autobuild:
+  player:
+    # The project's binding documents: they reach the builder, the reviewer and
+    # the factory's spec and plan writers, read at the commit being worked on.
+    required_documents:
+      - docs/constitution/mission.md
+      - docs/constitution/tech-stack.md
